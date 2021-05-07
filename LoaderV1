@@ -1,0 +1,232 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Loading = Instance.new("ScreenGui")
+local Back = Instance.new("Frame")
+local LoadingFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local exploit = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local hatespeech = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+
+--Properties:
+
+Loading.Name = "Loading"
+Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loading.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Loading.ResetOnSpawn = false
+
+Back.Name = "Back"
+Back.Parent = Loading
+Back.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Back.Position = UDim2.new(-2.04424238, 0, -1.72469175, 0)
+Back.Size = UDim2.new(0, 6023, 0, 2898)
+
+LoadingFrame.Name = "LoadingFrame"
+LoadingFrame.Parent = Loading
+LoadingFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LoadingFrame.BorderColor3 = Color3.fromRGB(53, 53, 53)
+LoadingFrame.Position = UDim2.new(0.25575757, 0, 0.246913582, 0)
+LoadingFrame.Size = UDim2.new(0, 966, 0, 471)
+
+UICorner.Parent = LoadingFrame
+
+TextLabel.Parent = LoadingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.233954459, 0, 0.0169851389, 0)
+TextLabel.Size = UDim2.new(0, 493, 0, 95)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Welcome fellow user!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 49.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = LoadingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.324016571, 0, 0.184713364, 0)
+TextLabel_2.Size = UDim2.new(0, 339, 0, 61)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "To continue please tick these boxes on the left:"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 49.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = LoadingFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.132505178, 0, 0.369426757, 0)
+TextLabel_3.Size = UDim2.new(0, 475, 0, 61)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "No exploits, serversides, ETC."
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 30.000
+TextLabel_3.TextWrapped = true
+
+exploit.Name = "exploit"
+exploit.Parent = LoadingFrame
+exploit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+exploit.Position = UDim2.new(0.032091096, 0, 0.314225048, 0)
+exploit.Size = UDim2.new(0, 108, 0, 93)
+exploit.Font = Enum.Font.SourceSans
+exploit.Text = ""
+exploit.TextColor3 = Color3.fromRGB(255, 255, 255)
+exploit.TextSize = 70.000
+exploit.TextWrapped = true
+
+UICorner_2.Parent = exploit
+
+hatespeech.Name = "hatespeech"
+hatespeech.Parent = LoadingFrame
+hatespeech.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+hatespeech.Position = UDim2.new(0.032091096, 0, 0.56263268, 0)
+hatespeech.Size = UDim2.new(0, 108, 0, 98)
+hatespeech.Font = Enum.Font.SourceSans
+hatespeech.Text = ""
+hatespeech.TextColor3 = Color3.fromRGB(255, 255, 255)
+hatespeech.TextSize = 70.000
+hatespeech.TextWrapped = true
+
+UICorner_3.Parent = hatespeech
+
+TextLabel_4.Parent = LoadingFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.170807451, 0, 0.600849271, 0)
+TextLabel_4.Size = UDim2.new(0, 475, 0, 61)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Be friendly, patient, and welcoming."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 30.000
+TextLabel_4.TextWrapped = true
+
+TextButton.Parent = LoadingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.195652172, 0, 0.789808929, 0)
+TextButton.Size = UDim2.new(0, 566, 0, 85)
+TextButton.Visible = false
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Continue"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_4.Parent = TextButton
+
+TextLabel_5.Parent = LoadingFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.584886134, 0, 0.789808929, 0)
+TextLabel_5.Size = UDim2.new(0, 393, 0, 95)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "STATUS:"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 30.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = LoadingFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.674948275, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 318, 0, 42)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Gui made by: 2309matimati2309"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 23.000
+TextLabel_6.TextWrapped = true
+
+-- Scripts:
+
+local function VHDVVG_fake_script() -- exploit.LocalScript 
+	local script = Instance.new('LocalScript', exploit)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text = "✅"
+	end)
+end
+coroutine.wrap(VHDVVG_fake_script)()
+local function HVHMRT_fake_script() -- hatespeech.LocalScript 
+	local script = Instance.new('LocalScript', hatespeech)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text = "✅"
+	end)
+end
+coroutine.wrap(HVHMRT_fake_script)()
+local function RJOEPDD_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Back.Visible = false
+		game.Lighting.Blur.Size = 24
+		Wait(0.1)
+		game.Lighting.Blur.Size = 23
+		Wait(0.1)
+		game.Lighting.Blur.Size = 22
+		Wait(0.1)
+		game.Lighting.Blur.Size = 20
+		Wait(0.1)
+		game.Lighting.Blur.Size = 19
+		Wait(0.1)
+		game.Lighting.Blur.Size = 16
+		Wait(0.1)
+		game.Lighting.Blur.Size = 12
+		Wait(0.1)
+		game.Lighting.Blur.Size = 8
+		Wait(0.1)
+		game.Lighting.Blur.Size = 3
+		Wait(0.1)
+		game.Lighting.Blur.Size = 0
+	end)
+end
+coroutine.wrap(RJOEPDD_fake_script)()
+local function KUZGTU_fake_script() -- TextLabel_5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_5)
+
+	script.Parent.Text = "STATUS: Wait 10 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 9 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 8 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 7 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 6 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 5 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 4 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 3 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 2 seconds..."
+	wait(1)
+	script.Parent.Text = "STATUS: Wait 1 seconds..."
+	wait(1)
+	if script.Parent.Parent.hatespeech.Text == "" or script.Parent.Parent.exploit.Text == "" then
+		script.Parent.Text = "Cannot show button, please tick all the boxes."
+		Wait(3.7)
+		game.Players.LocalPlayer:Kick('You have been kicked, please tick all the boxes in time. You are not banned.')
+	else
+		script.Parent.Parent.TextButton.Visible = true
+		script.Parent.Visible = false
+	end
+	
+end
+coroutine.wrap(KUZGTU_fake_script)()
